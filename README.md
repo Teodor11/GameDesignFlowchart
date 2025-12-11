@@ -1,8 +1,14 @@
-Authors:  
-Eryk Zinkowski 160114  
-Teodor Kunze 160231  
-python 3.10  
+
 # GameDesignFlowchart
+
+Authors:  
+- Eryk Zinkowski 160114  
+- Teodor Kunze 160231  
+
+Python 3.10 → run with: `python3 main.py`
+
+---
+
 An interactive game design services decision flowchart in CLIPS + Python based on the below image:
 
 
