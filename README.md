@@ -1,7 +1,7 @@
 
 # GameDesignFlowchart
 
-Authors:  
+### Authors (L1):  
 - Eryk Zinkowski 160114  
 - Teodor Kunze 160231  
 
