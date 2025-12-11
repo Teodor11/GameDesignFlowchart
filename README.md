@@ -1,6 +1,7 @@
 # GameDesignFlowchart
-Authors:
-Eryk Zinkowski 160114
+Authors:  
+Eryk Zinkowski 160114  
+Teodor Kunze 160231  
 An interactive game design services decision flowchart in CLIPS + Python based on the below image:
 
 
