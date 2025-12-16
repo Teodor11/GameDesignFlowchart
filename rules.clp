@@ -543,7 +543,7 @@
         =>
     (assert(question
         (id q-2weeks-2seconds)
-        (text "Want to to spend two weeks on two seconds?")
+        (text "Want to spend two weeks on two seconds?")
         (answers "Yes" "No")
     ))
 )
@@ -569,12 +569,12 @@
 
 (defrule q-told-what-to-do-yes
     (answer (id q-told-what-to-do) (value "Yes"))
-    (not (answer (id q-obses-details) (value ?)))
-    (not (question (id q-obses-details)))
+    (not (answer (id q-obsess-details) (value ?)))
+    (not (question (id q-obsess-details)))
         =>
     (assert(question
-        (id q-obses-details)
-        (text "Do you obsess excessively over even tiniest details?")
+        (id q-obsess-details)
+        (text "Do you obsesss excessively over even tiniest details?")
         (answers "Yes" "No")
     ))
 )
@@ -619,8 +619,8 @@
     (assert (result (text "Office IT")))
 )
 
-(defrule q-obses-details-yes
-    (answer (id q-obses-details) (value "Yes"))
+(defrule q-obsess-details-yes
+    (answer (id q-obsess-details) (value "Yes"))
     (not (answer (id q-gore-blood) (value ?)))
     (not (question (id q-gore-blood)))
         =>
@@ -631,8 +631,8 @@
     ))
 )
 
-(defrule q-obses-details-no
-    (answer (id q-obses-details) (value "No"))
+(defrule q-obsess-details-no
+    (answer (id q-obsess-details) (value "No"))
     (not (result (text ?)))
         =>
     (assert (result (text "Event Scripter")))
@@ -699,18 +699,18 @@
 
 (defrule q-celebrity-no
     (answer (id q-celebrity) (value "No"))
-    (not (answer (id q-caussian-hot) (value ?)))
-    (not (question (id q-caussian-hot)))
+    (not (answer (id q-caucasian-hot) (value ?)))
+    (not (question (id q-caucasian-hot)))
         =>
     (assert(question
-        (id q-caussian-hot)
+        (id q-caucasian-hot)
         (text "Are you young caucasian and hot?")
         (answers "Yes" "No")
     ))
 )
 
-(defrule q-caussian-hot-yes
-    (answer (id q-caussian-hot) (value "Yes"))
+(defrule q-caucasian-hot-yes
+    (answer (id q-caucasian-hot) (value "Yes"))
     (not (answer (id q-male) (value ?)))
     (not (question (id q-male)))
         =>
@@ -721,8 +721,8 @@
     ))
 )
 
-(defrule q-caussian-hot-no
-    (answer (id q-caussian-hot) (value "No"))
+(defrule q-caucasian-hot-no
+    (answer (id q-caucasian-hot) (value "No"))
     (not (result (text ?)))
         =>
     (assert (result (text "Motion Capture Actor")))
@@ -775,7 +775,7 @@
         =>
     (assert(question
         (id q-choice-of-friends)
-        (text "Do you want to chose who to hang out with?")
+        (text "Do you want to choose who to hang out with?")
         (answers "Yes" "No")
     ))
 )
@@ -791,5 +791,5 @@
     (answer (id q-choice-of-friends) (value "No"))
     (not (result (text ?)))
         =>
-    (assert (result (text "Comunity Menager")))
+    (assert (result (text "Community Manager")))
 )
